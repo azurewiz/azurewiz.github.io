@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Arvind Arun | AI & Cloud Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --text: #334155;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        
+        body { line-height: 1.6; color: var(--text); background: var(--light); }
+        
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            align-items: center;
+        }
+        
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--dark); }
+        .nav-links a { text-decoration: none; color: var(--text); margin-left: 2rem; font-weight: 500; }
+        .nav-links a:hover { color: var(--primary); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 2rem;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .hero h1 { font-size: 3.5rem; color: var(--dark); margin-bottom: 1rem; }
+        .hero p { font-size: 1.5rem; color: #64748b; margin-bottom: 2rem; max-width: 600px; }
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #1d4ed8; }
+
+        /* Section Styles */
+        section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+        h2 { font-size: 2rem; color: var(--dark); margin-bottom: 2rem; text-align: center; }
+        
+        /* Experience & Projects Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--primary);
+        }
+        
+        .card h3 { margin-bottom: 0.5rem; color: var(--dark); }
+        .card .meta { font-size: 0.9rem; color: #64748b; margin-bottom: 1rem; display: block; }
+        .tags { margin-top: 1rem; }
+        .tag {
+            background: #e2e8f0;
+            padding: 0.2rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Skills */
+        .skills-container { text-align: center; }
+        .skill-category { margin-bottom: 2rem; }
+        
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
+        .social-links a { color: white; font-size: 1.5rem; margin: 0 10px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; } /* Simple mobile hide for now */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Sai Arvind Arun</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="about">
+        <h1>Hi, I'm Sai Arvind.</h1>
+        <p>Computer Science Student | AI Engineer | Cloud Enthusiast</p>
+        <p style="font-size: 1rem; margin-top: -1.5rem; margin-bottom: 2rem;">Building scalable backend systems and intelligent AI workflows.</p>
+        <div>
+            <a href="https://github.com/azurewiz" class="btn"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/sai-arvind-arun-b288162a1/" class="btn" style="background: #0077b5; margin-left: 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>AI & ML Intern</h3>
+                <span class="meta">TechSaksham (Microsoft & SAP) | Jan 2025 - Feb 2025</span>
+                <p>Engineered an end-to-end AI system for crop disease detection using TensorFlow and EfficientNetB0 (94.27% accuracy). Integrated Google Gemini API for generative treatment plans and deployed to Azure.</p>
+                <div class="tags">
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Gemini API</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity Intern</h3>
+                <span class="meta">IBM | Jan 2025 - Feb 2025</span>
+                <p>Ranked top 10% of 60 interns. Mastered threat detection using IBM QRadar SIEM and conducted vulnerability scanning using OWASP ZAP.</p>
+                <div class="tags">
+                    <span class="tag">QRadar</span>
+                    <span class="tag">OWASP ZAP</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>AWS Cloud Intern</h3>
+                <span class="meta">F13 Technologies | Aug 2024 - Nov 2024</span>
+                <p>Led a 4-member team to execute a cloud migration plan using Java and AWS EC2/S3. Collaborated with auditors to ensure zero breaches during simulation.</p>
+                <div class="tags">
+                    <span class="tag">AWS EC2</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Migration</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🥔 AI-Powered Potato Disease Detector (V2)</h3>
+                <p>A full-stack agricultural AI tool. Detects disease from leaf images and uses Generative AI to prescribe treatment.</p>
+                <br>
+                <ul style="margin-left: 20px; font-size: 0.9rem; color: #444;">
+                    <li>Fine-tuned EfficientNetB0 (94.27% Acc)</li>
+                    <li>Deployed on MS Azure App Service</li>
+                    <li>Integrated MongoDB Atlas for logging</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">GenAI</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🛒 E-commerce Microservices</h3>
+                <p>A modular backend system separating 'Product Catalog' and 'Order Processing' into independent services.</p>
+                <br>
+                <ul style="margin-left: 20px; font-size: 0.9rem; color: #444;">
+                    <li>Java Spring Boot Architecture</li>
+                    <li>RESTful APIs for high-volume CRUD</li>
+                    <li>Dockerized for scalability</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Microservices</span>
+                    <span class="tag">MongoDB</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>💬 Real-time Chat App</h3>
+                <p>Bi-directional messaging system enabling instant communication.</p>
+                <br>
+                <ul style="margin-left: 20px; font-size: 0.9rem; color: #444;">
+                    <li>Built with Spring WebSocket & STOMP</li>
+                    <li>Asynchronous message delivery</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">WebSocket</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Spring Boot</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> AI & Data Science</h3>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Keras</span>
+                    <span class="tag">OpenCV</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Power BI</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-server"></i> Backend & Cloud</h3>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">AWS (EC2, S3)</span>
+                    <span class="tag">Azure</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="background: white;">
+        <h2>Get In Touch</h2>
+        <div style="text-align: center;">
+            <p style="margin-bottom: 1rem;">Currently open for Internships in AI, Data Analysis, and Backend Engineering.</p>
+            <a href="mailto:saiarvindarun.26csb@licet.ac.in" class="btn">Send Email</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/azurewiz"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/sai-arvind-arun-b288162a1/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">© 2025 Sai Arvind Arun</p>
+    </footer>
+
+</body>
+</html>
